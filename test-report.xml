@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/nitik/React/blink-list/src/components/molecules/searchBar/SearchBar.test.tsx">
-    <testCase name="SearchBar Tests to be in test" duration="123"/>
-  </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton.test.tsx">
-    <testCase name="FinishedReading Button component tests FinishedReading Button" duration="116"/>
+    <testCase name="FinishedReading Button component tests FinishedReading Button" duration="187"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/molecules/exploreBookOnEntrepreneurship/ExploreBooksOnEntrepreneurship.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="226"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/explore/exploreHead/Explore.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="470"/>
+    <testCase name="Typography Tests to be in test" duration="320"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/templates/currently reading/CurrentlyReading.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="388"/>
+    <testCase name="Typography Tests to be in test" duration="482"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/anchor/anchor.test.tsx">
-    <testCase name="Anchor component tests Anchor component tests" duration="66"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/explore/exploreHead/Explore.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="571"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/footer/Footer.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="180"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/searchBar/SearchBar.test.tsx">
+    <testCase name="SearchBar Tests to be in test" duration="127"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/templates/finished reading/FinishedReading.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="347"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/icons/SearchIcon.test.tsx">
-    <testCase name="Anchor component tests Anchor component tests" duration="57"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/navBar/NavBar.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="178"/>
+    <testCase name="Typography Tests to be in test" duration="440"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/molecules/bookCard/BookCard.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="267"/>
+    <testCase name="Typography Tests to be in test" duration="339"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/typography/TypographyComponent.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="51"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/footer/Footer.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="243"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/logo/Logo.test.tsx">
-    <testCase name="Logo Tests to be in test" duration="40"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/underLinedButton/UnderLinedButton.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="54"/>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/anchor/anchor.test.tsx">
+    <testCase name="Anchor component tests Anchor component tests" duration="58"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/navDown/NavDown.test.tsx">
-    <testCase name="Logo Tests to be in test" duration="42"/>
+    <testCase name="Logo Tests to be in test" duration="45"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/navBar/NavBar.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="159"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/typography/TypographyComponent.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="72"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/icons/SearchIcon.test.tsx">
+    <testCase name="Anchor component tests Anchor component tests" duration="45"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/underLinedButton/UnderLinedButton.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="32"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/logo/Logo.test.tsx">
+    <testCase name="Logo Tests to be in test" duration="28"/>
   </file>
 </testExecutions>
