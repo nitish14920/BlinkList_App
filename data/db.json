@@ -111,18 +111,6 @@
       "reads": "9k reads",
       "status": "Reading",
       "type": "just added"
-    }
-  ],
-  "continueReading": [
-    {
-      "id": "5",
-      "img": "5.png",
-      "bookName": "Lives of the Stoics",
-      "bookAuthor": "Ryan Holiday & Stephen Hansel",
-      "time": "13-minute read",
-      "reads": "4k reads",
-      "status": "Reading",
-      "type": "just added"
     },
     {
       "id": "7",
@@ -143,6 +131,18 @@
       "reads": "1.9k reads",
       "status": "Reading",
       "type": "featured"
+    }
+  ],
+  "continueReading": [
+    {
+      "id": "5",
+      "img": "5.png",
+      "bookName": "Lives of the Stoics",
+      "bookAuthor": "Ryan Holiday & Stephen Hansel",
+      "time": "13-minute read",
+      "reads": "4k reads",
+      "status": "Reading",
+      "type": "just added"
     },
     {
       "id": "9",

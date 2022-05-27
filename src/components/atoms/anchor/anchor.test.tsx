@@ -4,8 +4,14 @@ import Anchor from "./Anchor";
 describe("Anchor component tests", () => {
   afterEach(cleanup);
   it("Anchor component tests", () => {
-    render(<Anchor>Nitish</Anchor>);
+    render(<Anchor></Anchor>);
     const element = screen.getByTestId("anchorTest");
+    expect(element).toBeInTheDocument();
+  });
+
+  it("Should Have text", () => {
+    render(<Anchor>My Library</Anchor>);
+    const element = screen.getByText(/My Library/i);
     expect(element).toBeInTheDocument();
   });
 });

@@ -33,14 +33,14 @@ describe("FinishedReading Button component tests", () => {
             },
           ]}
           data={{
-            bookAuthor: "Erica Keswin",
-            bookName: "Bring Your Human to Work",
-            id: 1,
-            img: "2.png",
-            reads: "2k reads",
-            status: "finished",
+            id: 9,
+            img: "8.png",
+            bookName: "Eat Better, Feel Better",
+            bookAuthor: "Giada De Laurentiis",
             time: "13-minute read",
-            type: "trending",
+            reads: "1.9k reads",
+            status: "Reading",
+            type: "featured",
           }}
           text="Nitish"
         ></FinishedReadingButton>
@@ -48,5 +48,6 @@ describe("FinishedReading Button component tests", () => {
     );
     const element = screen.getByTestId("finishedReadingButtonTest");
     expect(element).toBeInTheDocument();
+    element.click();
   });
 });

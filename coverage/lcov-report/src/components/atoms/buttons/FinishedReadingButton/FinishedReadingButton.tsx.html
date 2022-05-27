@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">13.63% </span>
+                <span class="strong">54.54% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/22</span>
+                <span class='fraction'>12/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/20</span>
+                <span class='fraction'>10/20</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -169,20 +169,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -247,21 +247,21 @@ const FinishedReadingButton = ({
   continueBooks,
 }: ButtonInterface) =&gt; {
   const navigate = useNavigate();
-  async function <span class="fstat-no" title="function not covered" >handleOnclick(</span>) {
-<span class="cstat-no" title="statement not covered" >    console.log(finishedBooks, data);</span>
+  async function handleOnclick() {
+    console.log(finishedBooks, data);
 &nbsp;
-    var arr = <span class="cstat-no" title="statement not covered" >finishedBooks.filter(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; <span class="cstat-no" title="statement not covered" >book.id == data?.id)</span>;</span>
-<span class="cstat-no" title="statement not covered" >    if (arr.length &gt;= 1) {</span>
+    var arr = finishedBooks.filter((book) =&gt; book.id == data?.id);
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (arr.length &gt;= 1) {
 <span class="cstat-no" title="statement not covered" >      return;</span>
     }
-    const newFinishedBooks = <span class="cstat-no" title="statement not covered" >[</span>
+    const newFinishedBooks = [
       ...finishedBooks,
       { ...data, status: "Finished" },
     ];
-    var newContinueBooks = <span class="cstat-no" title="statement not covered" >continueBooks.filter(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; <span class="cstat-no" title="statement not covered" >book.id !== data?.id)</span>;</span>
+    var newContinueBooks = continueBooks.filter((book) =&gt; book.id !== data?.id);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const response = <span class="cstat-no" title="statement not covered" >await axios.delete(</span>
+    try {
+      const response = await axios.delete(
         `http://localhost:8000/continueReading/${data?.id}`
       );
 <span class="cstat-no" title="statement not covered" >      console.log(response.data);</span>
@@ -307,7 +307,7 @@ export default FinishedReadingButton;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Fri May 27 2022 13:26:14 GMT+0530 (India Standard Time)
+                at Fri May 27 2022 17:04:41 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../../prettify.js"></script>
         <script>
