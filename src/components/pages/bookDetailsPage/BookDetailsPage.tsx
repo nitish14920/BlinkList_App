@@ -4,7 +4,7 @@ import BookDetails from "../../molecules/bookDetails/BookDetails";
 import Footer from "../../molecules/footer/Footer";
 import NavBar from "../../molecules/navBar/NavBar";
 import { useLocation } from "react-router-dom";
-import { BookInterface } from "../../atoms/buttons/FinishedReadingButton";
+import { BookInterface } from "../../atoms/buttons/FinishedReadingButton/FinishedReadingButton";
 interface DataProp {
   data?: any;
   setContinueReading?: any;

@@ -1,9 +1,9 @@
 import Button from "@mui/material/Button";
 import React from "react";
-import { ButtonInterface } from "../../../interfaces/interface";
+import { ButtonInterface } from "../../../../interfaces/interface";
 import { useNavigate } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
-import { theme } from "./../../../theme";
+import { theme } from "../../../../theme";
 import axios from "axios";
 export interface BookInterface {
   id: number;

@@ -3,8 +3,8 @@ import React from "react";
 import Anchor from "../../atoms/anchor/Anchor";
 import FinishedReadingButton, {
   BookInterface,
-} from "../../atoms/buttons/FinishedReadingButton";
-import ReadNowButton from "../../atoms/buttons/ReadNowButton";
+} from "../../atoms/buttons/FinishedReadingButton/FinishedReadingButton";
+import ReadNowButton from "../../atoms/buttons/ReadNowButton/ReadNowButton";
 import { TypographyComponent } from "../../atoms/typography/TypographyComponent";
 import UnderLinedButton from "../../atoms/underLinedButton/UnderLinedButton";
 import useStyles from "../../../styles/myStyles";

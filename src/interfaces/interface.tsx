@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BookInterface } from "../components/atoms/buttons/FinishedReadingButton";
+import { BookInterface } from "../components/atoms/buttons/FinishedReadingButton/FinishedReadingButton";
 export interface Props {
   children?: ReactNode;
   setExplore?: any;

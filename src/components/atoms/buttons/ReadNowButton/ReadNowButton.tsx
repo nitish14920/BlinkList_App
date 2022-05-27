@@ -4,8 +4,8 @@ import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ButtonInterface } from "../../../interfaces/interface";
-import { theme } from "../../../theme";
+import { ButtonInterface } from "../../../../interfaces/interface";
+import { theme } from "../../../../theme";
 const ReadNowBotton = ({
   text,
   setFinishedReading,
