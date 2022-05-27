@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 import "./App.css";
-import BookDetails from "./components/molecules/bookDetails/BookDetails";
 
-import Footer from "./components/molecules/footer/Footer";
 import BookDetailsPage from "./components/pages/bookDetailsPage/BookDetailsPage";
 import { Route, Routes } from "react-router-dom";
 import ContinueReadingPage from "./components/pages/continueReadingPage/ContinueReadingPage";
-import ExploreBooksOnEntrepreneurship from "./components/molecules/exploreBookOnEntrepreneurship/ExploreBooksOnEntrepreneurship";
-import SearchBar from "./components/molecules/searchBar/SearchBar";
 import axios from "axios";
 import EntrepreneurshipBooksPage from "./components/pages/EntrepreneurshipBooksPage/EntrepreneurshipBooksPage";
 
