@@ -37,7 +37,7 @@ const BookDetails = ({
           </Grid>
           <Grid item md={12}>
             <TypographyComponent variant="h3">
-              {data.state.bookName}
+              {data?.state.bookName}
             </TypographyComponent>
           </Grid>
           <Grid item md={12}>
@@ -47,12 +47,12 @@ const BookDetails = ({
           </Grid>
           <Grid item md={12}>
             <TypographyComponent variant="subtitle2">
-              {data.state.bookAuthor}
+              {data?.state.bookAuthor}
             </TypographyComponent>
           </Grid>
           <Grid item md={12}>
             <TypographyComponent variant="subtitle2">
-              {data.state.time}
+              {data?.state.time}
             </TypographyComponent>
           </Grid>
         </Grid>
@@ -63,7 +63,7 @@ const BookDetails = ({
           position={"relative"}
           top={"40px"}
         >
-          <img src={`/${data.state.img}`} alt="img" />
+          <img src={`/${data?.state.img}`} alt="img" />
         </Grid>
         <Grid container width={"500px"} spacing="20">
           <Grid item>
@@ -72,7 +72,7 @@ const BookDetails = ({
               setContinueReading={setContinueReading}
               finishedBooks={finishedBooks}
               continueBooks={continueBooks}
-              data={data.state}
+              data={data?.state}
               text="Read Now"
             ></ReadNowButton>
           </Grid>
@@ -83,7 +83,7 @@ const BookDetails = ({
               finishedBooks={finishedBooks}
               continueBooks={continueBooks}
               text="Finished Reading"
-              data={data.state}
+              data={data?.state}
             ></FinishedReadingButton>
           </Grid>
           <Grid item>

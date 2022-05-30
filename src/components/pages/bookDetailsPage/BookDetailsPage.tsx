@@ -11,18 +11,29 @@ interface DataProp {
   setFinishedReading?: any;
   finishedBooks: BookInterface[];
   continueBooks: BookInterface[];
+  isAuthenticated: boolean;
+  explore: boolean;
+  setExplore?: Function;
 }
+
 const BookDetailsPage = ({
   setContinueReading,
   setFinishedReading,
   finishedBooks,
   continueBooks,
+  isAuthenticated,
+  explore,
+  setExplore,
 }: DataProp) => {
   const location = useLocation();
   console.log(location);
   return (
     <Grid container>
-      <NavBar></NavBar>
+      <NavBar
+        setExplore={setExplore}
+        explore={explore}
+        isAuthenticated={isAuthenticated}
+      ></NavBar>
       <BookDetails
         data={location}
         setContinueReading={setContinueReading}

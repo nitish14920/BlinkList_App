@@ -8,8 +8,16 @@ import NavBar from "../../molecules/navBar/NavBar";
 import SearchBar from "../../molecules/searchBar/SearchBar";
 interface BookProp {
   books: BookInterface[];
+  isAuthenticated: boolean;
+  explore: boolean;
+  setExplore?: Function;
 }
-const EntrepreneurshipBooksPage = ({ books }: BookProp) => {
+const EntrepreneurshipBooksPage = ({
+  books,
+  isAuthenticated,
+  explore,
+  setExplore,
+}: BookProp) => {
   const [searchedWord, setSearchedWord] = useState("");
   if (searchedWord !== "") {
     books = books.filter((book) =>
@@ -25,7 +33,11 @@ const EntrepreneurshipBooksPage = ({ books }: BookProp) => {
 
   return (
     <Grid container width={"1200px"} margin={"auto"}>
-      <NavBar></NavBar>
+      <NavBar
+        setExplore={setExplore}
+        explore={explore}
+        isAuthenticated={isAuthenticated}
+      ></NavBar>
       <Grid container margin="auto" width="70vw">
         <Grid item md={12}>
           <ExploreBooksOnEntrepreneurship></ExploreBooksOnEntrepreneurship>

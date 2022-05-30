@@ -128,7 +128,7 @@ const NavBar = ({ setExplore, explore, isAuthenticated }: NavBarInterface) => {
             isAuthenticated = !isAuthenticated;
           }}
         >
-          <Login></Login>
+          <Login className={classes.loginButton}></Login>
         </Grid>
       )}
     </Grid>

@@ -95,6 +95,11 @@ const useStyles = makeStyles({
     fontSize: 16,
     marginRight: "20px",
   },
+  loginButton: {
+    background: "#22C870",
+    fontSize: 16,
+    marginTop: "20px",
+  },
 });
 
 export default useStyles;

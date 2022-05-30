@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
@@ -21,7 +21,7 @@ const MockEnt = () => {
         continueBooks={[
           {
             bookAuthor: "Erica Keswin",
-            bookName: "Bring Your Human to Work",
+            bookName: "Bring Your Human to Wor",
             id: 1,
             img: "2.png",
             reads: "2k reads",
@@ -42,6 +42,8 @@ const MockEnt = () => {
             type: "featured",
           },
         ]}
+        explore={false}
+        isAuthenticated={true}
       />
     </BrowserRouter>
   );

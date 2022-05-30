@@ -13,17 +13,21 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import FinishedReading from "../../templates/finished reading/FinishedReading";
-import { useAuth0 } from "@auth0/auth0-react";
+
 interface ContinueReadingProp {
   continueReading: object[];
   finishedReading: object[];
+  isAuthenticated: boolean;
+  explore: boolean;
+  setExplore?: Function;
 }
 const ContinueReadingPage = ({
   continueReading,
   finishedReading,
+  isAuthenticated,
+  explore,
+  setExplore,
 }: ContinueReadingProp) => {
-  const [explore, setExplore] = useState(false);
-  const { isAuthenticated } = useAuth0();
   const [value, setValue] = useState("1");
   console.log("isAuthenticated" + isAuthenticated);
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {

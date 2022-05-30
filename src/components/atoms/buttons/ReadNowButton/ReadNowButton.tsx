@@ -52,7 +52,12 @@ const ReadNowBotton = ({
   }
   return (
     <ThemeProvider theme={theme}>
-      <Button variant="outlined" color="primary" onClick={handleOnclick}>
+      <Button
+        data-testid="readNowButtonTest"
+        variant="outlined"
+        color="primary"
+        onClick={handleOnclick}
+      >
         {text}
       </Button>
     </ThemeProvider>

@@ -7,11 +7,15 @@ import { Route, Routes } from "react-router-dom";
 import ContinueReadingPage from "./components/pages/continueReadingPage/ContinueReadingPage";
 import axios from "axios";
 import EntrepreneurshipBooksPage from "./components/pages/EntrepreneurshipBooksPage/EntrepreneurshipBooksPage";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
   const [finishedReading, setFinishedReading] = useState([]);
   const [continueReading, setContinueReading] = useState([]);
   const [books, setBooks] = useState([]);
+  const [explore, setExplore] = useState(false);
+  const { isAuthenticated } = useAuth0();
+
   useEffect(() => {
     async function getUser() {
       try {
@@ -53,6 +57,9 @@ function App() {
             <ContinueReadingPage
               continueReading={continueReading}
               finishedReading={finishedReading}
+              explore={explore}
+              setExplore={setExplore}
+              isAuthenticated={isAuthenticated}
             />
           }
         ></Route>
@@ -61,6 +68,9 @@ function App() {
           element={
             <EntrepreneurshipBooksPage
               books={books}
+              explore={explore}
+              setExplore={setExplore}
+              isAuthenticated={isAuthenticated}
             ></EntrepreneurshipBooksPage>
           }
         ></Route>
@@ -72,6 +82,9 @@ function App() {
               continueBooks={continueReading}
               setContinueReading={setContinueReading}
               setFinishedReading={setFinishedReading}
+              explore={explore}
+              setExplore={setExplore}
+              isAuthenticated={isAuthenticated}
             />
           }
         ></Route>

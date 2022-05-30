@@ -113,6 +113,16 @@
       "type": "featured"
     },
     {
+      "id": "8",
+      "img": "7.png",
+      "bookName": "The Lonely Century",
+      "bookAuthor": "Noreena Hertz",
+      "time": "15-minute read",
+      "reads": "1.9k reads",
+      "status": "Finished",
+      "type": "featured"
+    },
+    {
       "id": "2",
       "img": "11.png",
       "bookName": "Employee to Entrepreneur",
@@ -183,16 +193,6 @@
       "reads": "4k reads",
       "status": "Reading",
       "type": "just added"
-    },
-    {
-      "id": "8",
-      "img": "7.png",
-      "bookName": "The Lonely Century",
-      "bookAuthor": "Noreena Hertz",
-      "time": "15-minute read",
-      "reads": "1.9k reads",
-      "status": "Reading",
-      "type": "featured"
     }
   ]
 }

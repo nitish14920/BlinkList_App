@@ -32,6 +32,8 @@ const MockEnt = () => {
             type: "trending",
           },
         ]}
+        explore={false}
+        isAuthenticated={true}
       />
     </BrowserRouter>
   );

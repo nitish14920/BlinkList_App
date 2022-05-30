@@ -7,16 +7,6 @@ import BookDetails from "./BookDetails";
 const MockEnt = () => {
   return (
     <BookDetails
-      data={{
-        id: 9,
-        img: "9.png",
-        bookName: "Dropshipping",
-        bookAuthor: "James Moore",
-        time: "12-minute read",
-        reads: "12k reads",
-        status: "Reading",
-        type: "featured",
-      }}
       continueBooks={[
         {
           bookAuthor: "Erica Keswin",
