@@ -1,9 +1,10 @@
 import Button from "@mui/material/Button";
 import React from "react";
-import { ButtonInterface } from "../../../interfaces/interface";
+import { ButtonInterface } from "../../../../interfaces/interface";
 import { useNavigate } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
-import { theme } from "./../../../theme";
+import { theme } from "../../../../theme";
+import axios from "axios";
 export interface BookInterface {
   id: number;
   img: string;
@@ -23,17 +24,44 @@ const FinishedReadingButton = ({
   continueBooks,
 }: ButtonInterface) => {
   const navigate = useNavigate();
-  const handleOnclick = () => {
+  async function handleOnclick() {
+    console.log(finishedBooks, data);
+
     var arr = finishedBooks.filter((book) => book.id == data?.id);
     if (arr.length >= 1) {
       return;
     }
-    var newFinishedBooks = [...finishedBooks, data];
+    const newFinishedBooks = [
+      ...finishedBooks,
+      { ...data, status: "Finished" },
+    ];
     var newContinueBooks = continueBooks.filter((book) => book.id !== data?.id);
-    setContinueReading(newContinueBooks);
-    setFinishedReading(newFinishedBooks);
+
+    try {
+      const response = await axios.delete(
+        `http://localhost:8000/continueReading/${data?.id}`
+      );
+      console.log(response.data);
+      setContinueReading(newContinueBooks);
+    } catch (error) {
+      console.error(error);
+    }
+    try {
+      const response = await axios({
+        method: "post",
+        url: "http://localhost:8000/finishedReading",
+        data: {
+          ...data,
+          status: "Finished",
+        },
+      });
+      console.log(response.data);
+      setFinishedReading(newFinishedBooks);
+    } catch (error) {
+      console.error(error);
+    }
     navigate("/");
-  };
+  }
   return (
     <ThemeProvider theme={theme}>
       <Button

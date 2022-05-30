@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>5/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>5/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -149,7 +149,10 @@
 <a name='L84'></a><a href='#L84'>84</a>
 <a name='L85'></a><a href='#L85'>85</a>
 <a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,19 +172,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -235,12 +241,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Container, Grid, ThemeProvider } from "@mui/material";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Container, ThemeProvider } from "@mui/material";
 &nbsp;
-import UnderLinedButton from "../../atoms/underLinedButton/UnderLinedButton";
 import NavBar from "../../molecules/navBar/NavBar";
 import CurrentlyReading from "../../templates/currently reading/CurrentlyReading";
-import useStyles from "../../../styles/myStyles";
+&nbsp;
 import { TypographyComponent } from "../../atoms/typography/TypographyComponent";
 import Explore from "../../molecules/explore/exploreHead/Explore";
 import { useState } from "react";
@@ -251,71 +256,75 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import FinishedReading from "../../templates/finished reading/FinishedReading";
+&nbsp;
 interface ContinueReadingProp {
   continueReading: object[];
   finishedReading: object[];
+  isAuthenticated: boolean;
+  explore: boolean;
+  setExplore?: Function;
 }
-const ContinueReadingPage = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span></span>
+const ContinueReadingPage = ({
   continueReading,
   finishedReading,
+  isAuthenticated,
+  explore,
+  setExplore,
 }: ContinueReadingProp) =&gt; {
-  const classes = <span class="cstat-no" title="statement not covered" >useStyles();</span>
-  const [explore, setExplore] = <span class="cstat-no" title="statement not covered" >useState(false);</span>
-<span class="cstat-no" title="statement not covered" >  console.log(explore);</span>
-  const [value, setValue] = <span class="cstat-no" title="statement not covered" >useState("1");</span>
-&nbsp;
-  const handleChange = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>vent: React.SyntheticEvent, newValue: string) =&gt; {</span>
+  const [value, setValue] = useState("1");
+  console.log("isAuthenticated" + isAuthenticated);
+  const handleChange = <span class="fstat-no" title="function not covered" >(e</span>vent: React.SyntheticEvent, newValue: string) =&gt; {
 <span class="cstat-no" title="statement not covered" >    setValue(newValue);</span>
   };
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;Container&gt;
-      &lt;NavBar setExplore={setExplore} explore={explore}&gt;&lt;/NavBar&gt;
-      {explore ? &lt;Explore&gt;&lt;/Explore&gt; : &lt;Explore display="none"&gt;&lt;/Explore&gt;}
-&nbsp;
-      &lt;TypographyComponent
-        variant="h4"
-        marginLeft="6%"
-        marginBottom="50px"
-        fontWeight={700}
-      &gt;
-        My Library
-      &lt;/TypographyComponent&gt;
-      {/* &lt;div className={classes.underLinedButtonContainer}&gt;
-        &lt;UnderLinedButton
-          className={classes.underLinedButoon}
-          text1={"Continue Reading"}
-        /&gt;
-&nbsp;
-        &lt;UnderLinedButton
-          className={classes.underLinedButoon}
-          text1={"Finished Reading"}
-        /&gt;
-      &lt;/div&gt; */}
-      &lt;ThemeProvider theme={theme}&gt;
-        &lt;TabContext value={value}&gt;
-          &lt;Box
-            sx={{
-              borderBottom: 1,
-              borderColor: "divider",
-              width: "50vw",
-              marginLeft: "70px",
-            }}
+      &lt;NavBar
+        setExplore={setExplore}
+        explore={explore}
+        isAuthenticated={isAuthenticated}
+      &gt;&lt;/NavBar&gt;
+      {explore ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;Explore&gt;&lt;/Explore&gt; </span>: &lt;Explore display="none"&gt;&lt;/Explore&gt;}
+      {isAuthenticated ? (
+        &lt;&gt;
+          &lt;TypographyComponent
+            variant="h4"
+            marginLeft="6%"
+            marginBottom="50px"
+            fontWeight={700}
           &gt;
-            &lt;TabList onChange={handleChange} aria-label="lab API tabs example"&gt;
-              &lt;Tab label="Continue Reading" value="1" /&gt;
-              &lt;Tab label="Finished Reading" value="2" /&gt;
-            &lt;/TabList&gt;
-          &lt;/Box&gt;
-          &lt;TabPanel value="1"&gt;
-            &lt;CurrentlyReading continueReading={continueReading} /&gt;
-          &lt;/TabPanel&gt;
-          &lt;TabPanel value="2"&gt;
-            &lt;FinishedReading
-              finishedReading={finishedReading}
-            &gt;&lt;/FinishedReading&gt;
-          &lt;/TabPanel&gt;
-        &lt;/TabContext&gt;
-      &lt;/ThemeProvider&gt;
+            My Library
+          &lt;/TypographyComponent&gt;
+&nbsp;
+          &lt;ThemeProvider theme={theme}&gt;
+            &lt;TabContext value={value}&gt;
+              &lt;Box
+                sx={{
+                  borderBottom: 1,
+                  borderColor: "divider",
+                  width: "50vw",
+                  marginLeft: "70px",
+                }}
+              &gt;
+                &lt;TabList
+                  onChange={handleChange}
+                  aria-label="lab API tabs example"
+                &gt;
+                  &lt;Tab label="Continue Reading" value="1" /&gt;
+                  &lt;Tab label="Finished Reading" value="2" /&gt;
+                &lt;/TabList&gt;
+              &lt;/Box&gt;
+              &lt;TabPanel value="1"&gt;
+                &lt;CurrentlyReading continueReading={continueReading} /&gt;
+              &lt;/TabPanel&gt;
+              &lt;TabPanel value="2"&gt;
+                &lt;FinishedReading
+                  finishedReading={finishedReading}
+                &gt;&lt;/FinishedReading&gt;
+              &lt;/TabPanel&gt;
+            &lt;/TabContext&gt;
+          &lt;/ThemeProvider&gt;
+        &lt;/&gt;
+      ) : <span class="branch-1 cbranch-no" title="branch not covered" >null}</span>
     &lt;/Container&gt;
   );
 };
@@ -328,7 +337,7 @@ export default ContinueReadingPage;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Thu May 26 2022 23:16:09 GMT+0530 (India Standard Time)
+                at Tue May 31 2022 02:25:04 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

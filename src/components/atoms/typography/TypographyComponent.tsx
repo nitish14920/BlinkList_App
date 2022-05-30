@@ -11,6 +11,7 @@ export const TypographyComponent = ({
   fontWeight,
   width,
   lineHeight,
+  className,
 }: TypographyProps) => {
   return (
     <Typography
@@ -23,6 +24,7 @@ export const TypographyComponent = ({
       fontWeight={fontWeight}
       width={width}
       lineHeight={lineHeight}
+      className={className}
     >
       {children}
     </Typography>

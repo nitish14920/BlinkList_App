@@ -1,48 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton.test.tsx">
-    <testCase name="FinishedReading Button component tests FinishedReading Button" duration="187"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/exploreBookOnEntrepreneurship/ExploreBooksOnEntrepreneurship.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="320"/>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/ReadNowButton/ReadNowButton.test.tsx">
+    <testCase name="ReadNow Button component tests ReadNow Button" duration="166">
+      <failure message="TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;ReadNowButtonTest&quot;]"><![CDATA[TestingLibraryElementError: Unable to find an element by: [data-testid="ReadNowButtonTest"]
+
+Ignored nodes: comments, <script />, <style />
+<body>
+  <div>
+    <button
+      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-7djz7e-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Nitish
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</body>
+    at Object.getElementError (/home/nitik/React/blink-list/node_modules/@testing-library/dom/dist/config.js:38:19)
+    at /home/nitik/React/blink-list/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /home/nitik/React/blink-list/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/home/nitik/React/blink-list/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.<anonymous> (/home/nitik/React/blink-list/src/components/atoms/buttons/ReadNowButton/ReadNowButton.test.tsx:49:28)
+    at Promise.then.completed (/home/nitik/React/blink-list/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/nitik/React/blink-list/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/nitik/React/blink-list/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/nitik/React/blink-list/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/nitik/React/blink-list/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/nitik/React/blink-list/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/nitik/React/blink-list/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/templates/currently reading/CurrentlyReading.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="482"/>
+    <testCase name="Typography Tests to be in test" duration="456"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/explore/exploreHead/Explore.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="571"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/bookDetails/BookDetails.test.tsx">
+    <testCase name="should render the BookDetails component" duration="339">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;bookName&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'bookName')
+    at BookDetails (/home/nitik/React/blink-list/src/components/molecules/bookDetails/BookDetails.tsx:40:27)
+    at renderWithHooks (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:16175:18)
+    at mountIndeterminateComponent (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:20913:13)
+    at beginWork (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:22416:16)
+    at beginWork$1 (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:27381:14)
+    at performUnitOfWork (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:26516:12)
+    at workLoopSync (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:26422:5)
+    at renderRootSync (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:26390:7)
+    at recoverFromConcurrentError (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:25806:20)
+    at performConcurrentWorkOnRoot (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:25706:22)
+    at flushActQueue (/home/nitik/React/blink-list/node_modules/react/cjs/react.development.js:2665:24)
+    at act (/home/nitik/React/blink-list/node_modules/react/cjs/react.development.js:2580:11)
+    at /home/nitik/React/blink-list/node_modules/@testing-library/react/dist/act-compat.js:57:25
+    at renderRoot (/home/nitik/React/blink-list/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/nitik/React/blink-list/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/nitik/React/blink-list/src/components/molecules/bookDetails/BookDetails.test.tsx:51:3)
+    at Promise.then.completed (/home/nitik/React/blink-list/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/nitik/React/blink-list/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/nitik/React/blink-list/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/nitik/React/blink-list/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/nitik/React/blink-list/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/nitik/React/blink-list/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/nitik/React/blink-list/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/searchBar/SearchBar.test.tsx">
-    <testCase name="SearchBar Tests to be in test" duration="127"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/templates/finished reading/FinishedReading.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="440"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/bookCard/BookCard.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="339"/>
+  <file path="/home/nitik/React/blink-list/src/components/pages/bookDetailsPage/BookDetailsPage.test.tsx">
+    <testCase name="should render the ContinueReadingPage component" duration="580">
+      <failure message="TypeError: Cannot read properties of null (reading &apos;bookName&apos;)"><![CDATA[TypeError: Cannot read properties of null (reading 'bookName')
+    at BookDetails (/home/nitik/React/blink-list/src/components/molecules/bookDetails/BookDetails.tsx:40:27)
+    at renderWithHooks (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:16175:18)
+    at mountIndeterminateComponent (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:20913:13)
+    at beginWork (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:22416:16)
+    at beginWork$1 (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:27381:14)
+    at performUnitOfWork (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:26516:12)
+    at workLoopSync (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:26422:5)
+    at renderRootSync (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:26390:7)
+    at recoverFromConcurrentError (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:25806:20)
+    at performConcurrentWorkOnRoot (/home/nitik/React/blink-list/node_modules/react-dom/cjs/react-dom.development.js:25706:22)
+    at flushActQueue (/home/nitik/React/blink-list/node_modules/react/cjs/react.development.js:2665:24)
+    at act (/home/nitik/React/blink-list/node_modules/react/cjs/react.development.js:2580:11)
+    at /home/nitik/React/blink-list/node_modules/@testing-library/react/dist/act-compat.js:57:25
+    at renderRoot (/home/nitik/React/blink-list/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/nitik/React/blink-list/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/nitik/React/blink-list/src/components/pages/bookDetailsPage/BookDetailsPage.test.tsx:51:3)
+    at Promise.then.completed (/home/nitik/React/blink-list/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/nitik/React/blink-list/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/nitik/React/blink-list/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/nitik/React/blink-list/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/nitik/React/blink-list/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/nitik/React/blink-list/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/nitik/React/blink-list/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/nitik/React/blink-list/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/molecules/footer/Footer.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="243"/>
+    <testCase name="Typography Tests to be in test" duration="248"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/anchor/anchor.test.tsx">
-    <testCase name="Anchor component tests Anchor component tests" duration="58"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/explore/exploreHead/Explore.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="429"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/navDown/NavDown.test.tsx">
-    <testCase name="Logo Tests to be in test" duration="45"/>
+  <file path="/home/nitik/React/blink-list/src/components/pages/EntrepreneurshipBooksPage/EntrepreneurshipBookPage.test.tsx">
+    <testCase name="should render the EntreprenershipBooksPage component" duration="427"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/navBar/NavBar.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="159"/>
+  <file path="/home/nitik/React/blink-list/src/components/pages/continueReadingPage/ContinueReadingPage.test.tsx">
+    <testCase name="should render the ContinueReadingPage component" duration="692"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/typography/TypographyComponent.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="72"/>
+    <testCase name="Typography Tests to be in test" duration="38"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/icons/SearchIcon.test.tsx">
-    <testCase name="Anchor component tests Anchor component tests" duration="45"/>
+  <file path="/home/nitik/React/blink-list/src/components/templates/finished reading/FinishedReading.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="187"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/anchor/anchor.test.tsx">
+    <testCase name="Anchor component tests Anchor component tests" duration="68"/>
+    <testCase name="Anchor component tests Should Have text" duration="21"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton/FinishedReadingButton.test.tsx">
+    <testCase name="FinishedReading Button component tests FinishedReading Button" duration="197"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/searchBar/SearchBar.test.tsx">
+    <testCase name="SearchBar Tests to be in test" duration="62"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/navBar/NavBar.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="113"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/bookCard/BookCard.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="196"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/exploreBookOnEntrepreneurship/ExploreBooksOnEntrepreneurship.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="126"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/navDown/NavDown.test.tsx">
+    <testCase name="Logo Tests to be in test" duration="40"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/underLinedButton/UnderLinedButton.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="32"/>
+    <testCase name="Typography Tests to be in test" duration="29"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/logo/Logo.test.tsx">
-    <testCase name="Logo Tests to be in test" duration="28"/>
+    <testCase name="Logo Tests to be in test" duration="30"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/icons/SearchIcon.test.tsx">
+    <testCase name="Anchor component tests Anchor component tests" duration="46"/>
   </file>
 </testExecutions>

@@ -1,7 +1,7 @@
 import React from "react";
 import useStyles from "../../../styles/myStyles";
 import SearchIIcon from "../../atoms/icons/SearchIIcon";
-const SearchBar = () => {
+const SearchBar = ({ setSearchedWord }: any) => {
   const classes = useStyles();
   return (
     <div className={classes.searchBar} data-testid="searchBarTest">
@@ -18,6 +18,9 @@ const SearchBar = () => {
         name=""
         id=""
         placeholder="Search by Title or Author"
+        onChange={(e) => {
+          setSearchedWord(e.target.value);
+        }}
       />
     </div>
   );

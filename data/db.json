@@ -7,7 +7,7 @@
       "bookAuthor": "Erica Keswin",
       "time": "13-minute read",
       "reads": "2k reads",
-      "status": "finished",
+      "status": "Finished",
       "type": "trending"
     },
     {
@@ -17,7 +17,7 @@
       "bookAuthor": "Steve Glaveski",
       "time": "15-minute read",
       "reads": "13k reads",
-      "status": "finished",
+      "status": "Finished",
       "type": "featured"
     },
     {
@@ -27,7 +27,7 @@
       "bookAuthor": "Trey Gowdy",
       "time": "13-minute read",
       "reads": "1.9k reads",
-      "status": "finished",
+      "status": "Finished",
       "type": "trending"
     },
     {
@@ -37,7 +37,7 @@
       "bookAuthor": "Amanda Little",
       "time": "12-minute read",
       "reads": "16k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "just added"
     },
     {
@@ -47,7 +47,7 @@
       "bookAuthor": "Ryan Holiday & Stephen Hansel",
       "time": "13-minute read",
       "reads": "4k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "just added"
     },
     {
@@ -57,7 +57,7 @@
       "bookAuthor": "Debbie King",
       "time": "13-minute read",
       "reads": "9k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "just added"
     },
     {
@@ -67,7 +67,7 @@
       "bookAuthor": "Jim Collins & Bill Lazier",
       "time": "13-minute read",
       "reads": "1.9k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "trending"
     },
     {
@@ -77,7 +77,7 @@
       "bookAuthor": "Noreena Hertz",
       "time": "15-minute read",
       "reads": "1.9k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "featured"
     },
     {
@@ -87,7 +87,7 @@
       "bookAuthor": "Giada De Laurentiis",
       "time": "13-minute read",
       "reads": "1.9k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "featured"
     },
     {
@@ -97,20 +97,52 @@
       "bookAuthor": "James Moore",
       "time": "12-minute read",
       "reads": "12k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "featured"
     }
   ],
   "finishedReading": [
     {
-      "id": "3",
-      "img": "3.png",
-      "bookName": "Doesn’t Hurt to Ask",
-      "bookAuthor": "Trey Gowdy",
+      "id": "9",
+      "img": "8.png",
+      "bookName": "Eat Better, Feel Better",
+      "bookAuthor": "Giada De Laurentiis",
       "time": "13-minute read",
       "reads": "1.9k reads",
-      "status": "finished",
-      "type": "trending"
+      "status": "Finished",
+      "type": "featured"
+    },
+    {
+      "id": "8",
+      "img": "7.png",
+      "bookName": "The Lonely Century",
+      "bookAuthor": "Noreena Hertz",
+      "time": "15-minute read",
+      "reads": "1.9k reads",
+      "status": "Finished",
+      "type": "featured"
+    },
+    {
+      "id": "2",
+      "img": "11.png",
+      "bookName": "Employee to Entrepreneur",
+      "bookAuthor": "Steve Glaveski",
+      "time": "15-minute read",
+      "reads": "13k reads",
+      "status": "Finished",
+      "type": "featured"
+    }
+  ],
+  "continueReading": [
+    {
+      "id": "10",
+      "img": "9.png",
+      "bookName": "Dropshipping",
+      "bookAuthor": "James Moore",
+      "time": "12-minute read",
+      "reads": "12k reads",
+      "status": "Reading",
+      "type": "featured"
     },
     {
       "id": "1",
@@ -119,21 +151,9 @@
       "bookAuthor": "Erica Keswin",
       "time": "13-minute read",
       "reads": "2k reads",
-      "status": "finished",
+      "status": "Reading",
       "type": "trending"
     },
-    {
-      "id": "2",
-      "img": "11.png",
-      "bookName": "Employee to Entrepreneur",
-      "bookAuthor": "Steve Glaveski",
-      "time": "15-minute read",
-      "reads": "13k reads",
-      "status": "finished",
-      "type": "featured"
-    }
-  ],
-  "continueReading": [
     {
       "id": "4",
       "img": "4.png",
@@ -141,27 +161,7 @@
       "bookAuthor": "Amanda Little",
       "time": "12-minute read",
       "reads": "16k reads",
-      "status": "reading",
-      "type": "just added"
-    },
-    {
-      "id": "5",
-      "img": "5.png",
-      "bookName": "Lives of the Stoics",
-      "bookAuthor": "Ryan Holiday & Stephen Hansel",
-      "time": "13-minute read",
-      "reads": "4k reads",
-      "status": "reading",
-      "type": "just added"
-    },
-    {
-      "id": "6",
-      "img": "6.png",
-      "bookName": "Loving Your Business",
-      "bookAuthor": "Debbie King",
-      "time": "13-minute read",
-      "reads": "9k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "just added"
     },
     {
@@ -171,38 +171,28 @@
       "bookAuthor": "Jim Collins & Bill Lazier",
       "time": "13-minute read",
       "reads": "1.9k reads",
-      "status": "reading",
+      "status": "Reading",
       "type": "trending"
     },
     {
-      "id": "8",
-      "img": "7.png",
-      "bookName": "The Lonely Century",
-      "bookAuthor": "Noreena Hertz",
-      "time": "15-minute read",
-      "reads": "1.9k reads",
-      "status": "reading",
-      "type": "featured"
-    },
-    {
-      "id": "9",
-      "img": "8.png",
-      "bookName": "Eat Better, Feel Better",
-      "bookAuthor": "Giada De Laurentiis",
+      "id": "6",
+      "img": "6.png",
+      "bookName": "Loving Your Business",
+      "bookAuthor": "Debbie King",
       "time": "13-minute read",
-      "reads": "1.9k reads",
-      "status": "reading",
-      "type": "featured"
+      "reads": "9k reads",
+      "status": "Reading",
+      "type": "just added"
     },
     {
-      "id": "10",
-      "img": "9.png",
-      "bookName": "Dropshipping",
-      "bookAuthor": "James Moore",
-      "time": "12-minute read",
-      "reads": "12k reads",
-      "status": "reading",
-      "type": "featured"
+      "id": "5",
+      "img": "5.png",
+      "bookName": "Lives of the Stoics",
+      "bookAuthor": "Ryan Holiday & Stephen Hansel",
+      "time": "13-minute read",
+      "reads": "4k reads",
+      "status": "Reading",
+      "type": "just added"
     }
   ]
 }
