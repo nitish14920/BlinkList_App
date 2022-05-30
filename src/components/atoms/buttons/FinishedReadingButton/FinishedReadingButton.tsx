@@ -52,7 +52,7 @@ const FinishedReadingButton = ({
         url: "http://localhost:8000/finishedReading",
         data: {
           ...data,
-          status: "Reading",
+          status: "Finished",
         },
       });
       console.log(response.data);

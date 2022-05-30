@@ -13,3 +13,8 @@ export const theme2 = createTheme({
     },
   },
 });
+export const typographyTheme = createTheme({
+  typography: {
+    fontFamily: "CeraPro",
+  },
+});

@@ -1,17 +1,31 @@
-import React from "react";
 import Grid from "@mui/material/Grid";
 import Logo from "../../atoms/logo/Logo";
 import SearchIIcon from "../../atoms/icons/SearchIIcon";
-
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import NavDown from "../../atoms/navDown/NavDown";
 import Anchor from "../../atoms/anchor/Anchor";
 import { Box } from "@mui/material";
-
+import Login from "../Login/Login";
+import Logout from "../Logout/Logout";
+import useStyles from "../../../styles/myStyles";
 interface NavBarInterface {
   setExplore?: any;
   explore?: boolean;
+  isAuthenticated?: boolean;
 }
-const NavBar = ({ setExplore, explore }: NavBarInterface) => {
+const NavBar = ({ setExplore, explore, isAuthenticated }: NavBarInterface) => {
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  const classes = useStyles();
   return (
     <Grid
       data-testid="navBarTest"
@@ -47,30 +61,76 @@ const NavBar = ({ setExplore, explore }: NavBarInterface) => {
           My Library
         </Anchor>
       </Grid>
-      <Grid container width={"8%"}>
-        <Box
-          bgcolor={" #69A6E3"}
-          width={"40px"}
-          height={"40px"}
-          borderRadius={"50%"}
-          lineHeight={2}
-          marginTop={"10px"}
-          fontSize={20}
-          marginLeft={"50px"}
-          position={"relative"}
-          top={"10%"}
-        >
-          A
-        </Box>
-        <NavDown
-          sx={{
-            position: "relative",
-            top: "-25px",
-            left: "90px",
-            fontSize: 20,
+      {isAuthenticated ? (
+        <Grid
+          item
+          onClick={() => {
+            isAuthenticated = !isAuthenticated;
           }}
-        />
-      </Grid>
+        >
+          <Grid
+            container
+            width={"8%"}
+            sx={{
+              background: "#69A6E3",
+              borderRadius: "50%",
+              height: "40px",
+              width: "40px",
+              position: "relative",
+              top: "10px",
+            }}
+          >
+            <div>
+              <Button
+                id="basic-button"
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+                sx={{
+                  position: "relative",
+                  right: "12px",
+                  fontSize: 18,
+                }}
+              >
+                N
+              </Button>
+              <NavDown
+                sx={{
+                  position: "relative",
+                  top: "-33px",
+                  left: "20px",
+                  fontSize: 20,
+                }}
+              />
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <Logout className={classes.logoutButton}></Logout>
+                </MenuItem>
+              </Menu>
+            </div>
+          </Grid>
+        </Grid>
+      ) : (
+        <Grid
+          item
+          onClick={() => {
+            isAuthenticated = !isAuthenticated;
+          }}
+        >
+          <Login></Login>
+        </Grid>
+      )}
     </Grid>
   );
 };

@@ -113,54 +113,76 @@ const Explore = ({ display }: ExploreInrterface) => {
   return (
     <Grid
       container
-      bgcolor={"#F1F6F4"}
+      zIndex={2}
       display={display}
-      data-testid="exploreTest"
+      height={"150%"}
+      width={"100%"}
+      position={"absolute"}
+      right={"0%"}
+      top={"100px"}
     >
-      <Grid container sx={{ width: "65vw", margin: "auto" }}>
-        <TabContext value={value}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="Explore by category" value="1" />
-              <Tab label="See recently added titles" value="2" />
-              <Tab label="See popular titles" value="3" />
-            </TabList>
-          </Box>
-          <TabPanel value="1">
-            <Grid
-              container
-              sx={{ width: "65vw", margin: "auto", marginTop: "20px" }}
-            >
-              {list.map((e) => (
-                <Grid
-                  item
-                  md={4}
-                  display={"flex"}
-                  marginBottom={"10px"}
-                  onClick={() => {
-                    navigate("/entrepreneurshipBooks");
-                  }}
-                >
-                  {e.comp}
-                  <TypographyComponent
-                    color="#6D787E"
-                    variant="subtitle2"
-                    marginLeft="10px"
+      <Grid
+        container
+        bgcolor={"#F1F6F4"}
+        data-testid="exploreTest"
+        height={"398px"}
+      >
+        <Grid container sx={{ width: "65vw", margin: "auto" }}>
+          <TabContext value={value}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <TabList
+                onChange={handleChange}
+                aria-label="lab API tabs example"
+              >
+                <Tab label="Explore by category" value="1" />
+                <Tab label="See recently added titles" value="2" />
+                <Tab label="See popular titles" value="3" />
+              </TabList>
+            </Box>
+            <TabPanel value="1">
+              <Grid
+                container
+                sx={{ width: "65vw", margin: "auto", marginTop: "20px" }}
+              >
+                {list.map((e) => (
+                  <Grid
+                    item
+                    md={4}
+                    display={"flex"}
+                    marginBottom={"10px"}
+                    onClick={() => {
+                      navigate("/entrepreneurshipBooks");
+                    }}
+                    className={classes.exploreItems}
                   >
-                    {e.name}
-                  </TypographyComponent>
-                </Grid>
-              ))}
-            </Grid>
-          </TabPanel>
-          <TabPanel value="2">
-            <Grid container></Grid>
-          </TabPanel>
-          <TabPanel value="3">
-            <Grid container></Grid>
-          </TabPanel>
-        </TabContext>
+                    {e.comp}
+                    <TypographyComponent
+                      color="#6D787E"
+                      variant="subtitle2"
+                      marginLeft="10px"
+                      className={classes.exploreItems}
+                    >
+                      {e.name}
+                    </TypographyComponent>
+                  </Grid>
+                ))}
+              </Grid>
+            </TabPanel>
+            <TabPanel value="2">
+              <Grid container></Grid>
+            </TabPanel>
+            <TabPanel value="3">
+              <Grid container></Grid>
+            </TabPanel>
+          </TabContext>
+        </Grid>
       </Grid>
+      <Grid
+        container
+        bgcolor={"#9DA3A6"}
+        height={"100%"}
+        sx={{ opacity: "45%" }}
+      ></Grid>
     </Grid>
   );
 };

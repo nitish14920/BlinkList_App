@@ -47,6 +47,7 @@ export interface TypographyProps {
   marginBottom?: string;
   fontWeight?: number;
   lineHeight?: string;
+  className?: string;
 }
 
 export interface BookCardInterface {

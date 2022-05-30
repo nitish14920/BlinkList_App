@@ -32,14 +32,14 @@ const MockEnt = () => {
         ]}
         finishedBooks={[
           {
-            bookAuthor: "Erica Keswin",
-            bookName: "Bring Your Human to Work",
-            id: 1,
-            img: "2.png",
-            reads: "2k reads",
-            status: "finished",
-            time: "13-minute read",
-            type: "trending",
+            id: 8,
+            img: "7.png",
+            bookName: "The Lonely Century",
+            bookAuthor: "Noreena Hertz",
+            time: "15-minute read",
+            reads: "1.9k reads",
+            status: "Reading",
+            type: "featured",
           },
         ]}
       />

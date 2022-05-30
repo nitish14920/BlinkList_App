@@ -74,12 +74,26 @@ const useStyles = makeStyles({
       width: "40vw",
       height: "50px",
       border: "none",
+      outline: "none",
+      fontSize: 20,
     },
     display: "flex",
     border: "none",
     width: "40vw",
-    margin: "auto",
+    margin: "50px 0px",
     borderBottom: "2px solid gray",
+  },
+  exploreItems: {
+    "&:hover": {
+      cursor: "pointer",
+      color: "blue",
+    },
+  },
+  logoutButton: {
+    border: "none",
+    background: "white",
+    fontSize: 16,
+    marginRight: "20px",
   },
 });
 
