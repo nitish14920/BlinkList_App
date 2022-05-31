@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -138,26 +138,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -199,26 +199,26 @@ interface BookProp {
   explore: boolean;
   setExplore?: Function;
 }
-const EntrepreneurshipBooksPage = ({
+const EntrepreneurshipBooksPage = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span></span>
   books,
   isAuthenticated,
   explore,
   setExplore,
 }: BookProp) =&gt; {
-  const [searchedWord, setSearchedWord] = useState("");
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (searchedWord !== "") {
+  const [searchedWord, setSearchedWord] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+<span class="cstat-no" title="statement not covered" >  if (searchedWord !== "") {</span>
 <span class="cstat-no" title="statement not covered" >    books = books.filter(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt;</span>
 <span class="cstat-no" title="statement not covered" >      book.bookName.toLowerCase().includes(searchedWord.toLowerCase())</span>
     );
   }
 &nbsp;
-  const entrepreneurshipBooks = books.map((book) =&gt; (
-    &lt;Grid item md={4}&gt;
+  const entrepreneurshipBooks = <span class="cstat-no" title="statement not covered" >books.map(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Grid item md={4}&gt;</span>
       &lt;BookCard book={book} /&gt;
     &lt;/Grid&gt;
   ));
 &nbsp;
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;Grid container width={"1200px"} margin={"auto"}&gt;
       &lt;NavBar
         setExplore={setExplore}
@@ -253,7 +253,7 @@ export default EntrepreneurshipBooksPage;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue May 31 2022 02:25:04 GMT+0530 (India Standard Time)
+                at Tue May 31 2022 10:08:43 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

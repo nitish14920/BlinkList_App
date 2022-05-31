@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -175,19 +175,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -264,26 +264,26 @@ interface ContinueReadingProp {
   explore: boolean;
   setExplore?: Function;
 }
-const ContinueReadingPage = ({
+const ContinueReadingPage = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span></span>
   continueReading,
   finishedReading,
   isAuthenticated,
   explore,
   setExplore,
 }: ContinueReadingProp) =&gt; {
-  const [value, setValue] = useState("1");
-  console.log("isAuthenticated" + isAuthenticated);
-  const handleChange = <span class="fstat-no" title="function not covered" >(e</span>vent: React.SyntheticEvent, newValue: string) =&gt; {
+  const [value, setValue] = <span class="cstat-no" title="statement not covered" >useState("1");</span>
+<span class="cstat-no" title="statement not covered" >  console.log("isAuthenticated" + isAuthenticated);</span>
+  const handleChange = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>vent: React.SyntheticEvent, newValue: string) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    setValue(newValue);</span>
   };
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;Container&gt;
       &lt;NavBar
         setExplore={setExplore}
         explore={explore}
         isAuthenticated={isAuthenticated}
       &gt;&lt;/NavBar&gt;
-      {explore ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;Explore&gt;&lt;/Explore&gt; </span>: &lt;Explore display="none"&gt;&lt;/Explore&gt;}
+      {explore ? &lt;Explore&gt;&lt;/Explore&gt; : &lt;Explore display="none"&gt;&lt;/Explore&gt;}
       {isAuthenticated ? (
         &lt;&gt;
           &lt;TypographyComponent
@@ -324,7 +324,7 @@ const ContinueReadingPage = ({
             &lt;/TabContext&gt;
           &lt;/ThemeProvider&gt;
         &lt;/&gt;
-      ) : <span class="branch-1 cbranch-no" title="branch not covered" >null}</span>
+      ) : null}
     &lt;/Container&gt;
   );
 };
@@ -337,7 +337,7 @@ export default ContinueReadingPage;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue May 31 2022 02:25:04 GMT+0530 (India Standard Time)
+                at Tue May 31 2022 10:08:43 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
