@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">63.63% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/11</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/6</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">63.63% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/11</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -219,17 +219,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -357,17 +357,17 @@ interface NavBarInterface {
   explore?: boolean;
   isAuthenticated?: boolean;
 }
-const NavBar = ({ setExplore, explore, isAuthenticated }: NavBarInterface) =&gt; {
-  const [anchorEl, setAnchorEl] = React.useState&lt;null | HTMLElement&gt;(null);
-  const open = Boolean(anchorEl);
-  const handleClick = <span class="fstat-no" title="function not covered" >(e</span>vent: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; {
+const NavBar = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> setExplore, explore, isAuthenticated }: NavBarInterface) =&gt; {</span>
+  const [anchorEl, setAnchorEl] = <span class="cstat-no" title="statement not covered" >React.useState&lt;null | HTMLElement&gt;(null);</span>
+  const open = <span class="cstat-no" title="statement not covered" >Boolean(anchorEl);</span>
+  const handleClick = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>vent: React.MouseEvent&lt;HTMLButtonElement&gt;) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    setAnchorEl(event.currentTarget);</span>
   };
-  const handleClose = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+  const handleClose = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    setAnchorEl(null);</span>
   };
-  const classes = useStyles();
-  return (
+  const classes = <span class="cstat-no" title="statement not covered" >useStyles();</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;Grid
       data-testid="navBarTest"
       container
@@ -424,9 +424,9 @@ const NavBar = ({ setExplore, explore, isAuthenticated }: NavBarInterface) =&gt;
             &lt;div&gt;
               &lt;Button
                 id="basic-button"
-                aria-controls={open ? <span class="branch-0 cbranch-no" title="branch not covered" >"basic-menu" </span>: undefined}
+                aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
-                aria-expanded={open ? <span class="branch-0 cbranch-no" title="branch not covered" >"true" </span>: undefined}
+                aria-expanded={open ? "true" : undefined}
                 onClick={handleClick}
                 sx={{
                   position: "relative",
@@ -484,7 +484,7 @@ export default NavBar;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue May 31 2022 02:25:04 GMT+0530 (India Standard Time)
+                at Tue May 31 2022 10:08:43 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/atoms/buttons/ReadNowButton/FInishedReadingButton.stories.tsx</title>
+    <title>Code coverage report for molecules/searchBar/SearchBar.tsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../../../prettify.css" />
-    <link rel="stylesheet" href="../../../../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../../../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/components/atoms/buttons/ReadNowButton</a> FInishedReadingButton.stories.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">molecules/searchBar</a> SearchBar.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,11 +92,12 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,46 +114,42 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Button.stories.ts|tsx
-&nbsp;
-import React from "react";
-&nbsp;
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-&nbsp;
-import ReadNowButton from "./ReadNowButton";
-import { MemoryRouter } from "react-router-dom";
-&nbsp;
-export default {
-  /* 👇 The title prop is optional.
-   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
-   * to learn how to generate automatic titles
-   */
-  title: "Button",
-  component: ReadNowButton,
-} as ComponentMeta&lt;typeof ReadNowButton&gt;;
-&nbsp;
-//👇 We create a “template” of how args map to rendering
-const Template: ComponentStory&lt;typeof ReadNowButton&gt; = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rgs) =&gt; (</span>
-<span class="cstat-no" title="statement not covered" >  &lt;MemoryRouter&gt;</span>
-    &lt;ReadNowButton {...args} /&gt;
-  &lt;/MemoryRouter&gt;
-);
-&nbsp;
-//👇 Each story then reuses that template
-export const ReadNowButton1 = <span class="cstat-no" title="statement not covered" >Template.bind({});</span>
-<span class="cstat-no" title="statement not covered" >ReadNowButton1.args = {</span>
-  text: "Finished Reading",
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
+import useStyles from "../../../styles/myStyles";
+import SearchIIcon from "../../atoms/icons/SearchIIcon";
+const SearchBar = ({ setSearchedWord }: any) =&gt; {
+  const classes = useStyles();
+  return (
+    &lt;div className={classes.searchBar} data-testid="searchBarTest"&gt;
+      &lt;SearchIIcon
+        sx={{
+          position: "relative",
+          top: "15px",
+          fontSize: 35,
+          marginRight: "20px",
+        }}
+      &gt;&lt;/SearchIIcon&gt;
+      &lt;input
+        type="text"
+        name=""
+        id=""
+        placeholder="Search by Title or Author"
+        onChange={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; {
+<span class="cstat-no" title="statement not covered" >          setSearchedWord(e.target.value);</span>
+        }}
+      /&gt;
+    &lt;/div&gt;
+  );
 };
+&nbsp;
+export default SearchBar;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -160,16 +157,16 @@ export const ReadNowButton1 = <span class="cstat-no" title="statement not covere
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue May 31 2022 10:08:43 GMT+0530 (India Standard Time)
+                at Tue May 31 2022 11:42:03 GMT+0530 (India Standard Time)
             </div>
-        <script src="../../../../../prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../../../../sorter.js"></script>
-        <script src="../../../../../block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     

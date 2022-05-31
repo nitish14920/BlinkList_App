@@ -13,4 +13,13 @@ describe("Typography Tests", () => {
     const element = screen.getByTestId("navBarTest");
     expect(element).toBeInTheDocument();
   });
+  it(" be in test", () => {
+    render(
+      <MemoryRouter>
+        <NavBar explore={true} isAuthenticated={false}></NavBar>
+      </MemoryRouter>
+    );
+    const element = screen.getByTestId("navBarTest");
+    expect(element).toBeInTheDocument();
+  });
 });
