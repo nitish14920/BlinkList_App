@@ -8,6 +8,7 @@ const LogoutButton = ({ className }: Logout) => {
 
   return (
     <button
+      data-testid="logoutTest"
       className={className}
       onClick={() => logout({ returnTo: window.location.origin })}
     >

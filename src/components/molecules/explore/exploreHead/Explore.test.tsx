@@ -7,7 +7,7 @@ describe("Typography Tests", () => {
   it("to be in test", () => {
     render(
       <MemoryRouter>
-        <Explore></Explore>
+        <Explore display="flex"></Explore>
       </MemoryRouter>
     );
     const element = screen.getByTestId("exploreTest");

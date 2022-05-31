@@ -33,6 +33,7 @@ describe("Typography Tests", () => {
     );
     const element = screen.getByTestId("navBarTest");
     expect(element).toBeInTheDocument();
+    element.click();
   });
   it(" be in test", () => {
     render(
@@ -42,5 +43,6 @@ describe("Typography Tests", () => {
     );
     const element = screen.getByTestId("navBarTest");
     expect(element).toBeInTheDocument();
+    element.click();
   });
 });

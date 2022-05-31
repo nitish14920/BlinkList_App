@@ -12,5 +12,6 @@ describe("Logo Tests", () => {
     );
     const element = screen.getByTestId("logoTest");
     expect(element).toBeInTheDocument();
+    element.click();
   });
 });
