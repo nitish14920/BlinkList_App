@@ -29,20 +29,27 @@ const ReadNowBotton = ({
       const response = await axios.delete(
         `http://localhost:8000/finishedReading/${data?.id}`
       );
-      console.log(response.data);
+      console.log(response);
       setFinishedReading(newFinishedBooks);
     } catch (error) {
       console.error(error);
     }
     try {
-      const response = await axios({
-        method: "post",
-        url: "http://localhost:8000/continueReading",
-        data: {
+      const response = await axios.post(
+        `http://localhost:8000/continueReading`,
+        {
           ...data,
           status: "Reading",
-        },
-      });
+        }
+      );
+      // const response = await axios({
+      //   method: "post",
+      //   url: "http://localhost:8000/continueReading",
+      //   data: {
+      //     ...data,
+      //     status: "Reading",
+      //   },
+      // });
       console.log(response.data);
       setContinueReading(newContinueBooks);
     } catch (error) {

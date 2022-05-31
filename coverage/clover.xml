@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653990160362" clover="3.2.0">
-  <project timestamp="1653990160362" name="All files">
-    <metrics statements="245" coveredstatements="104" conditionals="22" coveredconditionals="13" methods="68" coveredmethods="34" elements="335" coveredelements="151" complexity="0" loc="245" ncloc="245" packages="25" files="45" classes="45"/>
+<coverage generated="1653992669843" clover="3.2.0">
+  <project timestamp="1653992669843" name="All files">
+    <metrics statements="245" coveredstatements="121" conditionals="22" coveredconditionals="13" methods="68" coveredmethods="34" elements="335" coveredelements="168" complexity="0" loc="245" ncloc="245" packages="25" files="45" classes="45"/>
     <package name="src">
       <metrics statements="39" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="App.tsx" path="/home/nitik/React/blink-list/src/App.tsx">
@@ -75,7 +75,7 @@
       </file>
     </package>
     <package name="src.components.atoms.buttons.FinishedReadingButton">
-      <metrics statements="24" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <metrics statements="24" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
       <file name="FInishedReadingButton.stories.tsx" path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton/FInishedReadingButton.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="20" count="0" type="stmt"/>
@@ -84,7 +84,7 @@
         <line num="28" count="0" type="stmt"/>
       </file>
       <file name="FinishedReadingButton.tsx" path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton/FinishedReadingButton.tsx">
-        <metrics statements="20" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <metrics statements="20" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="18" count="3" type="stmt"/>
         <line num="26" count="4" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
@@ -95,20 +95,20 @@
         <line num="38" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
         <line num="59" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
         <line num="65" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.components.atoms.buttons.ReadNowButton">
-      <metrics statements="24" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <metrics statements="24" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
       <file name="FInishedReadingButton.stories.tsx" path="/home/nitik/React/blink-list/src/components/atoms/buttons/ReadNowButton/FInishedReadingButton.stories.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="20" count="0" type="stmt"/>
@@ -117,7 +117,7 @@
         <line num="28" count="0" type="stmt"/>
       </file>
       <file name="ReadNowButton.tsx" path="/home/nitik/React/blink-list/src/components/atoms/buttons/ReadNowButton/ReadNowButton.tsx">
-        <metrics statements="20" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="9" count="3" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
@@ -128,16 +128,16 @@
         <line num="26" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="53" count="4" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.components.atoms.icons">

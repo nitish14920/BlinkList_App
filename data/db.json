@@ -103,16 +103,6 @@
   ],
   "finishedReading": [
     {
-      "id": "9",
-      "img": "8.png",
-      "bookName": "Eat Better, Feel Better",
-      "bookAuthor": "Giada De Laurentiis",
-      "time": "13-minute read",
-      "reads": "1.9k reads",
-      "status": "Finished",
-      "type": "featured"
-    },
-    {
       "id": "8",
       "img": "7.png",
       "bookName": "The Lonely Century",
@@ -193,6 +183,16 @@
       "reads": "4k reads",
       "status": "Reading",
       "type": "just added"
+    },
+    {
+      "id": "9",
+      "img": "8.png",
+      "bookName": "Eat Better, Feel Better",
+      "bookAuthor": "Giada De Laurentiis",
+      "time": "13-minute read",
+      "reads": "1.9k reads",
+      "status": "Reading",
+      "type": "featured"
     }
   ]
 }

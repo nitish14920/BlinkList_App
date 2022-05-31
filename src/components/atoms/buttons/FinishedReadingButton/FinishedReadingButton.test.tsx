@@ -1,7 +1,9 @@
 import { cleanup, render, screen } from "@testing-library/react";
+import axios from "axios";
 import { MemoryRouter } from "react-router-dom";
 import FinishedReadingButton from "./FinishedReadingButton";
-
+jest.mock("axios");
+const mockedAxios = axios as jest.Mocked<typeof axios>;
 describe("FinishedReading Button component tests", () => {
   afterEach(cleanup);
   it("FinishedReading Button", () => {
@@ -46,6 +48,8 @@ describe("FinishedReading Button component tests", () => {
         ></FinishedReadingButton>
       </MemoryRouter>
     );
+    mockedAxios.delete.mockResolvedValue({});
+    mockedAxios.post.mockResolvedValue({});
     const element = screen.getByTestId("finishedReadingButtonTest");
     expect(element).toBeInTheDocument();
     element.click();
