@@ -33,14 +33,14 @@ describe("ReadNow Button component tests", () => {
             },
           ]}
           data={{
-            bookAuthor: "Erica Keswin",
-            bookName: "Bring Your Human to Work",
-            id: 2,
-            img: "2.png",
-            reads: "2k reads",
-            status: "finished",
+            id: 9,
+            img: "8.png",
+            bookName: "Eat Better, Feel Better",
+            bookAuthor: "Giada De Laurentiis",
             time: "13-minute read",
-            type: "trending",
+            reads: "1.9k reads",
+            status: "Reading",
+            type: "featured",
           }}
           text="Nitish"
         ></ReadNowButton>
@@ -48,17 +48,17 @@ describe("ReadNow Button component tests", () => {
     );
     const element = screen.getByTestId("readNowButtonTest");
     expect(element).toBeInTheDocument();
+    element.click();
   });
-  it("ReadNow Button when data exist", () => {
+  it("ReadNow Button 2", () => {
     render(
       <MemoryRouter>
         <ReadNowButton
-          text="Read Now"
           continueBooks={[
             {
               bookAuthor: "Erica Keswin",
               bookName: "Bring Your Human to Work",
-              id: 2,
+              id: 1,
               img: "2.png",
               reads: "2k reads",
               status: "finished",
@@ -69,7 +69,7 @@ describe("ReadNow Button component tests", () => {
           finishedBooks={[
             {
               bookAuthor: "Erica Keswin",
-              bookName: "Bring Your Human t Work",
+              bookName: "Bring Your Human to Work",
               id: 1,
               img: "2.png",
               reads: "2k reads",
@@ -79,19 +79,21 @@ describe("ReadNow Button component tests", () => {
             },
           ]}
           data={{
-            bookAuthor: "Erica Keswin",
-            bookName: "Bring Your Human to Wor",
-            id: 3,
-            img: "2.png",
-            reads: "2k reads",
-            status: "finished",
+            id: 1,
+            img: "8.png",
+            bookName: "Eat Better, Feel Better",
+            bookAuthor: "Giada De Laurentiis",
             time: "13-minute read",
-            type: "trending",
+            reads: "1.9k reads",
+            status: "Reading",
+            type: "featured",
           }}
+          text="Nitish"
         ></ReadNowButton>
       </MemoryRouter>
     );
     const element = screen.getByTestId("readNowButtonTest");
     expect(element).toBeInTheDocument();
+    element.click();
   });
 });

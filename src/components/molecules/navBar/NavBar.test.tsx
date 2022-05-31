@@ -7,7 +7,28 @@ describe("Typography Tests", () => {
   it("to be in test", () => {
     render(
       <MemoryRouter>
-        <NavBar></NavBar>
+        <NavBar
+          explore={false}
+          isAuthenticated={false}
+          setExplore={() => {
+            console.log("explore");
+          }}
+        ></NavBar>
+      </MemoryRouter>
+    );
+    const element = screen.getByTestId("navBarTest");
+    expect(element).toBeInTheDocument();
+  });
+  it("navBar 3", () => {
+    render(
+      <MemoryRouter>
+        <NavBar
+          explore={true}
+          isAuthenticated={true}
+          setExplore={() => {
+            console.log("explore");
+          }}
+        ></NavBar>
       </MemoryRouter>
     );
     const element = screen.getByTestId("navBarTest");
@@ -16,7 +37,7 @@ describe("Typography Tests", () => {
   it(" be in test", () => {
     render(
       <MemoryRouter>
-        <NavBar explore={true} isAuthenticated={false}></NavBar>
+        <NavBar explore={false} isAuthenticated={true}></NavBar>
       </MemoryRouter>
     );
     const element = screen.getByTestId("navBarTest");

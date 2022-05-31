@@ -18,7 +18,7 @@ const ReadNowBotton = ({
   async function handleOnclick() {
     console.log(finishedBooks, data);
 
-    var arr = continueBooks.filter((book) => book.id == data?.id);
+    var arr = continueBooks.filter((book) => book.id === data?.id);
     if (arr.length >= 1) {
       return;
     }

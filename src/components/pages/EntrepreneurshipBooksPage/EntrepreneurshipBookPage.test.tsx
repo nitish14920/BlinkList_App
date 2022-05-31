@@ -22,6 +22,7 @@ const MockEnt = () => {
         ]}
         explore={false}
         isAuthenticated={true}
+        setExplore={() => {}}
       />
     </BrowserRouter>
   );

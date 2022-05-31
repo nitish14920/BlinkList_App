@@ -2,7 +2,7 @@ import { cleanup, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import ExploreBooksOnEntrepreneurship from "./ExploreBooksOnEntrepreneurship";
 
-describe("Typography Tests", () => {
+describe("Entrepreneurship Tests", () => {
   afterEach(cleanup);
   it("to be in test", () => {
     render(
