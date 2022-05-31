@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton/FinishedReadingButton.test.tsx">
-    <testCase name="FinishedReading Button component tests FinishedReading Button" duration="267"/>
-    <testCase name="FinishedReading Button component tests FinishedReading Button 2" duration="21"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/ReadNowButton/ReadNowButton.test.tsx">
-    <testCase name="ReadNow Button component tests ReadNow Button" duration="266"/>
-    <testCase name="ReadNow Button component tests ReadNow Button 2" duration="23"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/explore/exploreHead/Explore.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="448"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/bookDetails/BookDetails.test.tsx">
-    <testCase name="should render the BookDetails component" duration="401"/>
-  </file>
   <file path="/home/nitik/React/blink-list/src/components/pages/EntrepreneurshipBooksPage/EntrepreneurshipBookPage.test.tsx">
-    <testCase name="should render the EntreprenershipBooksPage component" duration="600"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/pages/bookDetailsPage/BookDetailsPage.test.tsx">
-    <testCase name="should render the ContinueReadingPage component" duration="649"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/pages/continueReadingPage/ContinueReadingPage.test.tsx">
-    <testCase name="should render the ContinueReadingPage component" duration="1015"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/footer/Footer.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="152"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/anchor/anchor.test.tsx">
-    <testCase name="Anchor component tests Anchor component tests" duration="110"/>
-    <testCase name="Anchor component tests Should Have text" duration="18"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/bookCard/BookCard.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="238"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/navBar/NavBar.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="157"/>
-    <testCase name="Typography Tests navBar 3" duration="130"/>
-    <testCase name="Typography Tests  be in test" duration="47"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/templates/finished reading/FinishedReading.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="420"/>
+    <testCase name="should render the EntreprenershipBooksPage component" duration="525"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/templates/currently reading/CurrentlyReading.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="355"/>
+    <testCase name="Typography Tests to be in test" duration="443"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/FinishedReadingButton/FinishedReadingButton.test.tsx">
+    <testCase name="FinishedReading Button component tests FinishedReading Button" duration="412"/>
+    <testCase name="FinishedReading Button component tests FinishedReading Button 2" duration="22"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/navBar/NavBar.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="191"/>
+    <testCase name="Typography Tests navBar 3" duration="126"/>
+    <testCase name="Typography Tests  be in test" duration="64"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/bookDetails/BookDetails.test.tsx">
+    <testCase name="should render the BookDetails component" duration="479"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/pages/bookDetailsPage/BookDetailsPage.test.tsx">
+    <testCase name="should render the ContinueReadingPage component" duration="594"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/pages/continueReadingPage/ContinueReadingPage.test.tsx">
+    <testCase name="should render the ContinueReadingPage component" duration="882"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/explore/exploreHead/Explore.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="323"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/buttons/ReadNowButton/ReadNowButton.test.tsx">
+    <testCase name="ReadNow Button component tests ReadNow Button" duration="144"/>
+    <testCase name="ReadNow Button component tests ReadNow Button 2" duration="27"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/templates/finished reading/FinishedReading.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="334"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/anchor/anchor.test.tsx">
+    <testCase name="Anchor component tests Anchor component tests" duration="124"/>
+    <testCase name="Anchor component tests Should Have text" duration="19"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/bookCard/BookCard.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="388"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/molecules/exploreBookOnEntrepreneurship/ExploreBooksOnEntrepreneurship.test.tsx">
-    <testCase name="Entrepreneurship Tests to be in test" duration="157"/>
+    <testCase name="Entrepreneurship Tests to be in test" duration="197"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/Logout/Logout.test.tsx">
-    <testCase name="should render the ContinueReadingPage component" duration="28"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/logo/Logo.test.tsx">
-    <testCase name="Logo Tests to be in test" duration="71"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/footer/Footer.test.tsx">
+    <testCase name="Typography Tests to be in test" duration="146"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/underLinedButton/UnderLinedButton.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="37"/>
+    <testCase name="Typography Tests to be in test" duration="57"/>
   </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/navDown/NavDown.test.tsx">
-    <testCase name="Logo Tests to be in test" duration="47"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/atoms/icons/SearchIcon.test.tsx">
-    <testCase name="Anchor component tests Anchor component tests" duration="57"/>
-  </file>
-  <file path="/home/nitik/React/blink-list/src/components/molecules/searchBar/SearchBar.test.tsx">
-    <testCase name="Checking main serach Rendering" duration="71"/>
-    <testCase name="Checking OnChange main search" duration="21"/>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/Logout/Logout.test.tsx">
+    <testCase name="should render the ContinueReadingPage component" duration="31"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/molecules/Login/Login.test.tsx">
-    <testCase name="should render the ContinueReadingPage component" duration="16"/>
+    <testCase name="should render the ContinueReadingPage component" duration="29"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/icons/SearchIcon.test.tsx">
+    <testCase name="Anchor component tests Anchor component tests" duration="43"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/molecules/searchBar/SearchBar.test.tsx">
+    <testCase name="Checking main serach Rendering" duration="60"/>
+    <testCase name="Checking OnChange main search" duration="16"/>
   </file>
   <file path="/home/nitik/React/blink-list/src/components/atoms/typography/TypographyComponent.test.tsx">
-    <testCase name="Typography Tests to be in test" duration="28"/>
+    <testCase name="Typography Tests to be in test" duration="41"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/logo/Logo.test.tsx">
+    <testCase name="Logo Tests to be in test" duration="56"/>
+  </file>
+  <file path="/home/nitik/React/blink-list/src/components/atoms/navDown/NavDown.test.tsx">
+    <testCase name="Logo Tests to be in test" duration="26"/>
   </file>
 </testExecutions>

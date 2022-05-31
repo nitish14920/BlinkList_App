@@ -12,7 +12,7 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Button",
+  title: "Templates",
   component: FinishedReading,
 } as ComponentMeta<typeof FinishedReading>;
 

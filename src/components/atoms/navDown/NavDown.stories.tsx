@@ -6,14 +6,13 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import NavDown from "./NavDown";
 import { MemoryRouter } from "react-router-dom";
-import { height } from "@mui/system";
 
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Button",
+  title: "Atoms",
   component: NavDown,
 } as ComponentMeta<typeof NavDown>;
 

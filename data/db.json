@@ -103,6 +103,26 @@
   ],
   "finishedReading": [
     {
+      "id": "10",
+      "img": "9.png",
+      "bookName": "Dropshipping",
+      "bookAuthor": "James Moore",
+      "time": "12-minute read",
+      "reads": "12k reads",
+      "status": "Finished",
+      "type": "featured"
+    },
+    {
+      "id": "7",
+      "img": "2.png",
+      "bookName": "Beyond Entrepreneurship 2.0",
+      "bookAuthor": "Jim Collins & Bill Lazier",
+      "time": "13-minute read",
+      "reads": "1.9k reads",
+      "status": "Finished",
+      "type": "trending"
+    },
+    {
       "id": "8",
       "img": "7.png",
       "bookName": "The Lonely Century",
@@ -111,29 +131,9 @@
       "reads": "1.9k reads",
       "status": "Finished",
       "type": "featured"
-    },
-    {
-      "id": "2",
-      "img": "11.png",
-      "bookName": "Employee to Entrepreneur",
-      "bookAuthor": "Steve Glaveski",
-      "time": "15-minute read",
-      "reads": "13k reads",
-      "status": "Finished",
-      "type": "featured"
     }
   ],
   "continueReading": [
-    {
-      "id": "10",
-      "img": "9.png",
-      "bookName": "Dropshipping",
-      "bookAuthor": "James Moore",
-      "time": "12-minute read",
-      "reads": "12k reads",
-      "status": "Reading",
-      "type": "featured"
-    },
     {
       "id": "1",
       "img": "2.png",
@@ -153,16 +153,6 @@
       "reads": "16k reads",
       "status": "Reading",
       "type": "just added"
-    },
-    {
-      "id": "7",
-      "img": "2.png",
-      "bookName": "Beyond Entrepreneurship 2.0",
-      "bookAuthor": "Jim Collins & Bill Lazier",
-      "time": "13-minute read",
-      "reads": "1.9k reads",
-      "status": "Reading",
-      "type": "trending"
     },
     {
       "id": "6",
@@ -191,6 +181,16 @@
       "bookAuthor": "Giada De Laurentiis",
       "time": "13-minute read",
       "reads": "1.9k reads",
+      "status": "Reading",
+      "type": "featured"
+    },
+    {
+      "id": "2",
+      "img": "11.png",
+      "bookName": "Employee to Entrepreneur",
+      "bookAuthor": "Steve Glaveski",
+      "time": "15-minute read",
+      "reads": "13k reads",
       "status": "Reading",
       "type": "featured"
     }

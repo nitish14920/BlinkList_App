@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-interface Logo {
+interface LogoProp {
   image: string;
   style?: {
     height?: string;
@@ -9,7 +9,7 @@ interface Logo {
     marginLeft?: string;
   };
 }
-const Logo = ({ image, style }: Logo) => {
+const Logo = ({ image, style }: LogoProp) => {
   const navigate = useNavigate();
   return (
     <img

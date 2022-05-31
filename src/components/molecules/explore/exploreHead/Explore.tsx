@@ -25,7 +25,6 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import useStyle from "../../../../styles/myStyles";
-import UnderLinedButton from "../../../atoms/underLinedButton/UnderLinedButton";
 import { TypographyComponent } from "../../../atoms/typography/TypographyComponent";
 interface ExploreInrterface {
   display?: string;

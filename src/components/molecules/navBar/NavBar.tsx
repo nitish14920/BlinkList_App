@@ -7,7 +7,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import NavDown from "../../atoms/navDown/NavDown";
 import Anchor from "../../atoms/anchor/Anchor";
-import { Box } from "@mui/material";
 import Login from "../Login/Login";
 import Logout from "../Logout/Logout";
 import useStyles from "../../../styles/myStyles";
@@ -46,7 +45,6 @@ const NavBar = ({ setExplore, explore, isAuthenticated }: NavBarInterface) => {
           style={{ height: "40px", marginTop: "15px" }}
         />
         <SearchIIcon sx={{ position: "relative", top: "20px", fontSize: 25 }} />
-        {/* <TypographyComponent variant="h6">Nitish</TypographyComponent> */}
 
         <Anchor
           setExplore={setExplore}

@@ -7,7 +7,6 @@ interface ContinueReadingProp {
 }
 const CurrentlyReading = ({ continueReading }: ContinueReadingProp) => {
   const classes = useStyles();
-  // const [crBooks, setcrBooks] = useState([]);
 
   const books = continueReading.map((book) => (
     <Grid item md={3}>

@@ -42,14 +42,7 @@ const ReadNowBotton = ({
           status: "Reading",
         }
       );
-      // const response = await axios({
-      //   method: "post",
-      //   url: "http://localhost:8000/continueReading",
-      //   data: {
-      //     ...data,
-      //     status: "Reading",
-      //   },
-      // });
+
       console.log(response.data);
       setContinueReading(newContinueBooks);
     } catch (error) {

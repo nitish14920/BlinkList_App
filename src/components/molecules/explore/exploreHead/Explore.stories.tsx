@@ -12,7 +12,7 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Button",
+  title: "Molecules",
   component: Explore,
 } as ComponentMeta<typeof Explore>;
 
