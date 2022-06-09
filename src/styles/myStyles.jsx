@@ -2,12 +2,12 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   bookList: {
-    width: "80vw",
-    margin: "auto",
+    width: "940px",
+    margin: "0 0 0 20px",
 
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "space-around",
+
     "& > div": {
       margin: "20px",
     },

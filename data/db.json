@@ -103,16 +103,6 @@
   ],
   "finishedReading": [
     {
-      "id": "10",
-      "img": "9.png",
-      "bookName": "Dropshipping",
-      "bookAuthor": "James Moore",
-      "time": "12-minute read",
-      "reads": "12k reads",
-      "status": "Finished",
-      "type": "featured"
-    },
-    {
       "id": "7",
       "img": "2.png",
       "bookName": "Beyond Entrepreneurship 2.0",
@@ -131,9 +121,7 @@
       "reads": "1.9k reads",
       "status": "Finished",
       "type": "featured"
-    }
-  ],
-  "continueReading": [
+    },
     {
       "id": "1",
       "img": "2.png",
@@ -141,18 +129,8 @@
       "bookAuthor": "Erica Keswin",
       "time": "13-minute read",
       "reads": "2k reads",
-      "status": "Reading",
+      "status": "Finished",
       "type": "trending"
-    },
-    {
-      "id": "4",
-      "img": "4.png",
-      "bookName": "The Fate of Food",
-      "bookAuthor": "Amanda Little",
-      "time": "12-minute read",
-      "reads": "16k reads",
-      "status": "Reading",
-      "type": "just added"
     },
     {
       "id": "6",
@@ -161,7 +139,7 @@
       "bookAuthor": "Debbie King",
       "time": "13-minute read",
       "reads": "9k reads",
-      "status": "Reading",
+      "status": "Finished",
       "type": "just added"
     },
     {
@@ -171,8 +149,30 @@
       "bookAuthor": "Ryan Holiday & Stephen Hansel",
       "time": "13-minute read",
       "reads": "4k reads",
-      "status": "Reading",
+      "status": "Finished",
       "type": "just added"
+    }
+  ],
+  "continueReading": [
+    {
+      "id": "2",
+      "img": "11.png",
+      "bookName": "Employee to Entrepreneur",
+      "bookAuthor": "Steve Glaveski",
+      "time": "15-minute read",
+      "reads": "13k reads",
+      "status": "Reading",
+      "type": "featured"
+    },
+    {
+      "id": "10",
+      "img": "9.png",
+      "bookName": "Dropshipping",
+      "bookAuthor": "James Moore",
+      "time": "12-minute read",
+      "reads": "12k reads",
+      "status": "Reading",
+      "type": "featured"
     },
     {
       "id": "9",
@@ -185,14 +185,14 @@
       "type": "featured"
     },
     {
-      "id": "2",
-      "img": "11.png",
-      "bookName": "Employee to Entrepreneur",
-      "bookAuthor": "Steve Glaveski",
-      "time": "15-minute read",
-      "reads": "13k reads",
+      "id": "4",
+      "img": "4.png",
+      "bookName": "The Fate of Food",
+      "bookAuthor": "Amanda Little",
+      "time": "12-minute read",
+      "reads": "16k reads",
       "status": "Reading",
-      "type": "featured"
+      "type": "just added"
     }
   ]
 }

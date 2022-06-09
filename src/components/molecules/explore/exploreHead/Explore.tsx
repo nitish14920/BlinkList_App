@@ -28,8 +28,9 @@ import useStyle from "../../../../styles/myStyles";
 import { TypographyComponent } from "../../../atoms/typography/TypographyComponent";
 interface ExploreInrterface {
   display?: string;
+  setExplore?: Function;
 }
-const Explore = ({ display }: ExploreInrterface) => {
+const Explore = ({ display, setExplore }: ExploreInrterface) => {
   const classes = useStyle();
   const navigate = useNavigate();
   const list = [
@@ -128,13 +129,26 @@ const Explore = ({ display }: ExploreInrterface) => {
       >
         <Grid container sx={{ width: "65vw", margin: "auto" }}>
           <TabContext value={value}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Box
+              sx={{
+                borderBottom: 1,
+                borderColor: "divider",
+              }}
+            >
               <TabList
                 onChange={handleChange}
                 aria-label="lab API tabs example"
               >
-                <Tab label="Explore by category" value="1" />
-                <Tab label="See recently added titles" value="2" />
+                <Tab
+                  label="Explore by category"
+                  value="1"
+                  style={{ marginRight: "180px" }}
+                />
+                <Tab
+                  label="See recently added titles"
+                  value="2"
+                  style={{ marginRight: "160px" }}
+                />
                 <Tab label="See popular titles" value="3" />
               </TabList>
             </Box>
@@ -157,7 +171,7 @@ const Explore = ({ display }: ExploreInrterface) => {
                     {e.comp}
                     <TypographyComponent
                       color="#6D787E"
-                      variant="subtitle2"
+                      variant="body2"
                       marginLeft="10px"
                       className={classes.exploreItems}
                     >
@@ -181,6 +195,11 @@ const Explore = ({ display }: ExploreInrterface) => {
         bgcolor={"#9DA3A6"}
         height={"100%"}
         sx={{ opacity: "45%" }}
+        onClick={() => {
+          if (setExplore) {
+            setExplore(false);
+          }
+        }}
       ></Grid>
     </Grid>
   );

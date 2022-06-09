@@ -3,7 +3,7 @@ import React from "react";
 import { ButtonInterface } from "../../../../interfaces/interface";
 import { useNavigate } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
-import { theme } from "../../../../theme";
+import theme from "../../../../theme";
 import axios from "axios";
 export interface BookInterface {
   id: number;
@@ -24,6 +24,11 @@ const FinishedReadingButton = ({
   continueBooks,
 }: ButtonInterface) => {
   const navigate = useNavigate();
+  var disabled = false;
+  var arr = finishedBooks.filter((book) => book.id === data?.id);
+  if (arr.length >= 1) {
+    disabled = true;
+  }
   async function handleOnclick() {
     console.log(finishedBooks, data);
 
@@ -63,16 +68,15 @@ const FinishedReadingButton = ({
     navigate("/");
   }
   return (
-    <ThemeProvider theme={theme}>
-      <Button
-        data-testid="finishedReadingButtonTest"
-        variant="contained"
-        color="primary"
-        onClick={handleOnclick}
-      >
-        {text}
-      </Button>
-    </ThemeProvider>
+    <Button
+      data-testid="finishedReadingButtonTest"
+      variant="contained"
+      color="primary"
+      onClick={handleOnclick}
+      disabled={disabled}
+    >
+      {text}
+    </Button>
   );
 };
 

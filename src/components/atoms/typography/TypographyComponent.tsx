@@ -12,6 +12,7 @@ export const TypographyComponent = ({
   width,
   lineHeight,
   className,
+  fontFamily,
 }: TypographyProps) => {
   return (
     <Typography
@@ -20,7 +21,7 @@ export const TypographyComponent = ({
       textAlign="left"
       marginLeft={marginLeft}
       marginBottom={marginBottom}
-      fontFamily={"Cera Pro"}
+      fontFamily={fontFamily}
       fontWeight={fontWeight}
       width={width}
       lineHeight={lineHeight}

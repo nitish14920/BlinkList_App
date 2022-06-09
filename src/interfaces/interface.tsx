@@ -31,8 +31,12 @@ export interface TypographyProps {
     | "h6"
     | "subtitle1"
     | "subtitle2"
+    | "subtitle3"
+    | "subtitle4"
+    | "subtitle5"
     | "body1"
     | "body2"
+    | "body3"
     | "caption"
     | "button"
     | "overline"
@@ -48,6 +52,7 @@ export interface TypographyProps {
   fontWeight?: number;
   lineHeight?: string;
   className?: string;
+  fontFamily?: string;
 }
 
 export interface BookCardInterface {
@@ -89,4 +94,5 @@ export interface ButtonInterface {
   data?: BookInterface;
   finishedBooks: BookInterface[];
   continueBooks: BookInterface[];
+  disabled?: boolean;
 }

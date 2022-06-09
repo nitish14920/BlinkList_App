@@ -28,21 +28,23 @@ const BookDetailsPage = ({
   const location = useLocation();
   console.log(location);
   return (
-    <Grid container>
-      <NavBar
-        setExplore={setExplore}
-        explore={explore}
-        isAuthenticated={isAuthenticated}
-      ></NavBar>
-      <BookDetails
-        data={location}
-        setContinueReading={setContinueReading}
-        setFinishedReading={setFinishedReading}
-        continueBooks={continueBooks}
-        finishedBooks={finishedBooks}
-      ></BookDetails>
+    <>
+      <Grid container width={"940px"} margin={"auto"}>
+        <NavBar
+          setExplore={setExplore}
+          explore={explore}
+          isAuthenticated={isAuthenticated}
+        ></NavBar>
+        <BookDetails
+          data={location}
+          setContinueReading={setContinueReading}
+          setFinishedReading={setFinishedReading}
+          continueBooks={continueBooks}
+          finishedBooks={finishedBooks}
+        ></BookDetails>
+      </Grid>
       <Footer></Footer>
-    </Grid>
+    </>
   );
 };
 

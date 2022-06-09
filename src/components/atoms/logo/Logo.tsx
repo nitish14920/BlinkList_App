@@ -7,6 +7,7 @@ interface LogoProp {
     width?: string;
     marginTop?: string;
     marginLeft?: string;
+    margin?: string;
   };
 }
 const Logo = ({ image, style }: LogoProp) => {

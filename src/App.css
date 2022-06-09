@@ -1,3 +1,9 @@
 .App {
   text-align: center;
+  width: "1440px";
+}
+@font-face {
+  font-family: "cerapro-webfont";
+  src: local("cerapro-webfont"),
+    url("./fonts/CeraPro/cerapro-webfont.woff") format("woff");
 }

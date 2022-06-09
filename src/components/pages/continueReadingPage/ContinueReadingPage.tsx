@@ -1,4 +1,4 @@
-import { Container, ThemeProvider } from "@mui/material";
+import { Container, Grid, ThemeProvider } from "@mui/material";
 
 import NavBar from "../../molecules/navBar/NavBar";
 import CurrentlyReading from "../../templates/currently reading/CurrentlyReading";
@@ -6,7 +6,7 @@ import CurrentlyReading from "../../templates/currently reading/CurrentlyReading
 import { TypographyComponent } from "../../atoms/typography/TypographyComponent";
 import Explore from "../../molecules/explore/exploreHead/Explore";
 import { useState } from "react";
-import { theme } from "../../../theme";
+import theme from "../../../theme";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -34,32 +34,37 @@ const ContinueReadingPage = ({
     setValue(newValue);
   };
   return (
-    <Container>
-      <NavBar
-        setExplore={setExplore}
-        explore={explore}
-        isAuthenticated={isAuthenticated}
-      ></NavBar>
-      {explore ? <Explore></Explore> : <Explore display="none"></Explore>}
-      {isAuthenticated ? (
-        <>
-          <TypographyComponent
-            variant="h4"
-            marginLeft="6%"
-            marginBottom="50px"
-            fontWeight={700}
-          >
-            My Library
-          </TypographyComponent>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <NavBar
+          setExplore={setExplore}
+          explore={explore}
+          isAuthenticated={isAuthenticated}
+        ></NavBar>
+        {explore ? (
+          <Explore setExplore={setExplore}></Explore>
+        ) : (
+          <Explore display="none"></Explore>
+        )}
+        {isAuthenticated ? (
+          <>
+            <TypographyComponent
+              variant="h1"
+              marginLeft="5%"
+              marginBottom="50px"
+              fontWeight={700}
+              color="common.black"
+            >
+              My Library
+            </TypographyComponent>
 
-          <ThemeProvider theme={theme}>
             <TabContext value={value}>
               <Box
                 sx={{
                   borderBottom: 1,
                   borderColor: "divider",
                   width: "50vw",
-                  marginLeft: "70px",
+                  marginLeft: "55px",
                 }}
               >
                 <TabList
@@ -79,10 +84,10 @@ const ContinueReadingPage = ({
                 ></FinishedReading>
               </TabPanel>
             </TabContext>
-          </ThemeProvider>
-        </>
-      ) : null}
-    </Container>
+          </>
+        ) : null}
+      </Container>
+    </ThemeProvider>
   );
 };
 

@@ -4,8 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "@mui/material";
-import { typographyTheme } from "./theme";
+
 import { Auth0Provider } from "@auth0/auth0-react";
 const domain = "dev-g00g9s06.us.auth0.com";
 const clientId = "XJ4HDmXeVSaFBVopNTcNYagMI5i0pFPx";

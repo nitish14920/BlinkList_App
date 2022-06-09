@@ -5,7 +5,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { ButtonInterface } from "../../../../interfaces/interface";
-import { theme } from "../../../../theme";
+import theme from "../../../../theme";
 const ReadNowBotton = ({
   text,
   setFinishedReading,
@@ -15,6 +15,11 @@ const ReadNowBotton = ({
   continueBooks,
 }: ButtonInterface) => {
   const navigate = useNavigate();
+  var disabled = false;
+  var arr = continueBooks.filter((book) => book.id === data?.id);
+  if (arr.length >= 1) {
+    disabled = true;
+  }
   async function handleOnclick() {
     console.log(finishedBooks, data);
 
@@ -57,6 +62,8 @@ const ReadNowBotton = ({
         variant="outlined"
         color="primary"
         onClick={handleOnclick}
+        id="readNowButton"
+        disabled={disabled}
       >
         {text}
       </Button>

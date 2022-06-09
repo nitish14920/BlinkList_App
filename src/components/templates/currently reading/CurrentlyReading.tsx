@@ -1,5 +1,6 @@
+import { ThemeProvider } from "@mui/material";
 import Grid from "@mui/material/Grid";
-
+import theme from "../../../theme";
 import useStyles from "../../../styles/myStyles";
 import BookCard from "../../molecules/bookCard/BookCard";
 interface ContinueReadingProp {
@@ -15,13 +16,15 @@ const CurrentlyReading = ({ continueReading }: ContinueReadingProp) => {
   ));
 
   return (
-    <Grid
-      data-testid="currentlyReadingTest"
-      container
-      className={classes.bookList}
-    >
-      {books}
-    </Grid>
+    <ThemeProvider theme={theme}>
+      <Grid
+        data-testid="currentlyReadingTest"
+        container
+        className={classes.bookList}
+      >
+        {books}
+      </Grid>
+    </ThemeProvider>
   );
 };
 

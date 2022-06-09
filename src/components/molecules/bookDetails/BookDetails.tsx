@@ -1,6 +1,8 @@
 import Grid from "@mui/material/Grid";
 import React from "react";
 import Anchor from "../../atoms/anchor/Anchor";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import FinishedReadingButton, {
   BookInterface,
 } from "../../atoms/buttons/FinishedReadingButton/FinishedReadingButton";
@@ -8,8 +10,8 @@ import ReadNowButton from "../../atoms/buttons/ReadNowButton/ReadNowButton";
 import { TypographyComponent } from "../../atoms/typography/TypographyComponent";
 import UnderLinedButton from "../../atoms/underLinedButton/UnderLinedButton";
 import useStyles from "../../../styles/myStyles";
+import theme from "../../../theme";
 import { ThemeProvider } from "@mui/material";
-import { theme } from "./../../../theme";
 
 interface DataProp {
   data?: any;
@@ -28,30 +30,42 @@ const BookDetails = ({
   const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
-      <Grid container height={"70vh"} width={"70%"} margin={"auto"}>
+      <Grid container height={"70vh"} width={"940px"} margin={"auto"}>
         <Grid container width={"70%"} height={"250px"}>
           <Grid item md={12}>
-            <TypographyComponent variant="subtitle2">
+            <TypographyComponent color="common.black" variant="body2">
               Get the Key ideas from
             </TypographyComponent>
           </Grid>
           <Grid item md={12}>
-            <TypographyComponent variant="h3">
+            <TypographyComponent color="common.black" variant="h1">
               {data?.state.bookName}
             </TypographyComponent>
           </Grid>
           <Grid item md={12}>
-            <TypographyComponent variant="h6">
+            <TypographyComponent
+              color="common.black"
+              textAlign="left"
+              variant="subtitle5"
+            >
               Turning Your Business into an Enduring Great Company
             </TypographyComponent>
           </Grid>
           <Grid item md={12}>
-            <TypographyComponent variant="subtitle2">
+            <TypographyComponent variant="body1" color="text.secondary">
               {data?.state.bookAuthor}
             </TypographyComponent>
           </Grid>
           <Grid item md={12}>
-            <TypographyComponent variant="subtitle2">
+            <TypographyComponent variant="caption" color="text.secondary">
+              <AccessTimeIcon
+                sx={{
+                  position: "relative",
+                  top: "5px",
+                  fontSize: 20,
+                  marginRight: "5px",
+                }}
+              ></AccessTimeIcon>
               {data?.state.time}
             </TypographyComponent>
           </Grid>
@@ -89,6 +103,15 @@ const BookDetails = ({
           <Grid item>
             <Anchor sx={{ color: "gray", lineHeight: "2" }}>
               Send to Kindle
+              <ArrowRightAltIcon
+                sx={{
+                  color: "gray",
+                  lineHeight: "2",
+                  position: "relative",
+                  top: "5px",
+                  left: "5px",
+                }}
+              ></ArrowRightAltIcon>
             </Anchor>
           </Grid>
         </Grid>
@@ -107,9 +130,10 @@ const BookDetails = ({
           ></UnderLinedButton>
         </Grid>
         <TypographyComponent
-          variant="subtitle2"
+          variant="body2"
           width="600px"
           marginBottom="50px"
+          color="common.black"
         >
           Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill
           Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for
